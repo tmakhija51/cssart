@@ -1,0 +1,160 @@
+	<img src="https://lh3.googleusercontent.com/_Mxu0M478-bH_iPHFcPEWREkKI5mi2Tkeiqh7bXK_bFaE_0r5Ds22L_bld45sLcZm6wuOg-pdw6w59tr0V2z0uxWqL6nTvn7s7PSpazDtxLbG9cFvYntBhgklMtbD9JUqT6JD9A4Mg=w2400" style="position:fixed; right:375px; bottom:505px; width:150px; height:150px; border:none;" alt="hair">
+	<style>
+	  :root {
+	    --skin-color: #f7b39c;
+	    --skin-border-color: #8f4520;
+	    --eye-color: #181c63;
+	    --hair: #d2221d;
+	    --orange-shirt: #f6723b;
+	    --white-shirt: #fef0d6;
+	    --freckle: #99543b;
+	    --white: #FCFCFC;
+	    --black: #000000;
+
+	  }
+
+	  body {
+	    /*i'm sorry i know i wasn't supposed to use any assets
+    but the css hair was not giving so i made that in
+    adobe illustrator (the image is showing for me
+    so not sure if it's the same error as last time)
+    and also this background is an image taken from the show but everything else is 
+    css i swear */
+	    background-image: url("https://i.pinimg.com/originals/a1/2f/3c/a12f3cd259218bc5109aa7ad88d9af47.png");
+	    background-color: #cccccc;
+	    display: flex;
+	    justify-content: right;
+
+	  }
+
+	  .head-shape {
+	    width: 0;
+	    height: 0;
+	    border-top: 120px solid transparent;
+	    border-bottom: 120px solid transparent;
+	    border-left: 180px solid var(--skin-color);
+	    transform: rotate(100deg) translateX(100px);
+	    border-radius: 4%;
+	  }
+
+	  .freckle1 {
+	    width: 1px solid var(--freckle);
+	    height: 1px;
+	    border: 3px solid var(--freckle);
+	    border-radius: 100%;
+	    transform: translate(-185px, 125px);
+
+	  }
+
+	  .freckle2 {
+	    width: 1px solid var(--freckle);
+	    height: 1px;
+	    border: 3px solid var(--freckle);
+	    border-radius: 100%;
+	    transform: translate(-185px, 140px);
+
+	  }
+
+	  .freckle3 {
+	    width: 1px solid var(--freckle);
+	    height: 1px;
+	    border: 3px solid var(--freckle);
+	    border-radius: 100%;
+	    transform: translate(-185px, 125px);
+
+	  }
+
+	  .eye1 {
+	    height: 50px;
+	    width: 60px;
+	    background-color: white;
+	    border: 2px solid var(--black);
+	    border-radius: 50%;
+	    transform: translate(-165px, 100px);
+
+
+	  }
+
+	  .pupil1 {
+	    height: 2px;
+	    width: 1px;
+	    border: 13.5px solid var(--eye-color);
+	    border-radius: 50%;
+	    transform: translate(-196px, 115px);
+	  }
+
+	  .eye2 {
+	    height: 50px;
+	    width: 60px;
+	    background-color: white;
+	    border: 2px solid var(--black);
+	    border-radius: 50%;
+	    transform: translate(158px, 105px);
+
+
+	  }
+
+	  .pupil2 {
+	    height: 2px;
+	    width: 1px;
+	    border: 13.5px solid var(--eye-color);
+	    border-radius: 50%;
+	    transform: translate(128px, 117px);
+	  }
+
+	  .smile {
+	    height: 100px;
+	    width: 100px;
+	    background: solid transparent;
+	    border-radius: 0px 100px 10px 300px;
+	    border: solid var(--skin-border-color) 5px;
+	    border-top: none;
+	    border-right: none;
+	    margin: 20px;
+	    transform: scale(.4, .5) translate(-680px, 300px);
+	  }
+
+	  .shirtcollar {
+	    height: 50px;
+	    width: 30px;
+	    background-color: var(--orange-shirt);
+	    border: 0px solid var(--black);
+	    border-radius: 50%;
+	    transform: translate(165px, 280px) rotate(100deg);
+	  }
+
+	  .shirt {
+	    position: absolute;
+	    height: 400px;
+	    width: 400px;
+	    border-bottom: 2px;
+	    transform: rotateY(65deg) translate(-420px, 46px) scaleY(.91);
+	    overflow: hidden;
+
+	  }
+
+	  .shirt:before {
+	    position: absolute;
+	    content: "";
+	    top: 70%;
+	    height: calc(100% - 10px);
+	    width: calc(100% - 10px);
+	    border-radius: 0% 40% 100%;
+	    border: 3px;
+	    background-color: var(--white-shirt);
+	    transform: rotate(-45deg);
+	  }
+	</style>
+
+	<div class="shirt"></div>
+	<div class="body"></div>
+	<div class="shirtcollar"></div>
+	<div class="eye2"></div>
+	<div class="pupil2"></div>
+	<div class="head-shape"></div>
+	<div class="freckle1"></div>
+	<div class="freckle2"></div>
+	<div class="freckle3"></div>
+	<div class="eye1"></div>
+	<div class="pupil1"></div>
+	<div class="smile"></div>
